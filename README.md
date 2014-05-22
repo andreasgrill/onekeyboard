@@ -1,9 +1,18 @@
-onekeyboard
-===========
-## Does it work?
-Actually it works pretty well. 
+Onekeyboard - Apple Keyboard Layout under Windows
+=================================================
+This small autohotkey script simulates the Macintosh OSX keyboard layout under Windows.
+## About this project
+This project is for everybody who wants to use the Mac OSX keyboard layout under Windows too. 
+I started this project because my work forced me to regularly switch between OS X and Windows. This was really frustrating for me, because even the basic keyboard shortcuts were different and I had to adapt for the changes every time again. 
 
- * Textfield navigation (⌥ + Left, `⌘ + Shift + Left`, ...)
+As I'm quite happy with the Mac keyboard layout I decided to simulate this layout under Windows. For instance, I wanted to press `⌘ + c` instead of `^ + c`. 
+
+As I couldn't find very useful other layouts on the Internet and the support of VMs like Parallels were quite unsatisfying, I decided to start fresh and create my own layout.
+
+## What does it do exactly?
+It simulates the following Mac OSX keyboard behavior under Windows:
+
+ * Textfield navigation (`⌥ + Left`, `⌘ + Shift + Left`, ...)
  * Copy&Paste (`⌘ + C`, `⌘ + X`, `⌘ + V`)
  * Symbols (`@`, `[](){}/|`, ...)
  * Windows key is still accessible through CTRL (`^`)
