@@ -2,7 +2,7 @@ Onekeyboard - Apple Keyboard Layout under Windows
 =================================================
 This small autohotkey script simulates the Macintosh OSX keyboard layout under Windows.
 ## About this project
-This project is for everybody who wants to use the Mac OSX keyboard layout under Windows too. 
+This project is for everyone who wants to use the Mac OSX keyboard layout under Windows too. 
 I started this project because my work forced me to regularly switch between OS X and Windows. This was really frustrating for me, because even the basic keyboard shortcuts were different and I had to adapt for the changes every time again. 
 
 As I'm quite happy with the Mac keyboard layout I decided to simulate this layout under Windows. For instance, I wanted to press `⌘ + c` instead of `^ + c`. 
@@ -26,7 +26,7 @@ It simulates the following Mac OSX keyboard behavior under Windows:
 
 
 ### Installation Guide
-At first we have swap the CMD (`⌘`) key with the CTRL (`^`) key. This is something that we shouldn't do with autohotkey, because it is more reliable to change such an important key on a lower level. There are multiple options to achieve this:
+At first we have to swap the CMD (`⌘`) key with the CTRL (`^`) key. This is something that we shouldn't do with autohotkey, because it is more reliable to change such an important key on a lower level. There are multiple options to achieve this:
 
  * If you are using Windows through a VM such as Parallels Desktop, you could swap the keys by using the Parallels shortcut settings ([Example](images/parallels.png)).
  * You could swap the keys by mapping them through the registry by applying the [ctrlswap.reg][reg] file.
