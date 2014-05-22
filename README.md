@@ -20,18 +20,24 @@ It simulates the following Mac OSX keyboard behavior under Windows:
 ## How to get it working
 ### Requirements
  * [autohotkey](http://www.autohotkey.com/) - lightweight program to interpret customized hotkeys.
- * mac.ahk script to correctly map the hotkeys (e.g. the script that does all the work).
+ * [mac.ahk][ahk] script to correctly map the hotkeys (e.g. the script that does all the work).
  * Some customization to swap the CMD (`⌘`) and the CTRL (`^`) keys lowlevel (see the following paragraph).
- * German keyboard layout (or you probably need to adjust the mac.ahk script for your language).
+ * German keyboard layout (or you probably need to adjust the [mac.ahk][ahk] script for your language).
 
 
 ### How-To
 At first we have swap the CMD (`⌘`) key with the CTRL (`^`) key. This is something that we shouldn't do with autohotkey, because it is more reliable to change such an important key on a lower level. There are multiple options to achieve this:
 
  * If you are using Windows through a VM such as Parallels Desktop, you could swap the keys by using the Parallels shortcut settings ([Example](images/parallels.png)).
- * You could swap the keys by mapping them through the registry by applying the ctrlswap.reg file.
+ * You could swap the keys by mapping them through the registry by applying the [ctrlswap.reg][reg] file.
  * You could also use a free program to swap the keys (such as KeyTweak) but it produces the same registry entry anyway.
 
 
 After you have successfully swapped the two keys, you just need to install autohotkey and start the mac.ahk script.
-If you don't use a German keyboard layout, you probably want to adjust the mac.ahk script to map special characters (such as `[](){}?@<>`) to the correct position. You are welcome to do so and create a pull request :)
+If you don't use a German keyboard layout, you probably want to adjust the [mac.ahk][ahk] script to map special characters (such as `[](){}?@<>`) to the correct position. You are welcome to do so and create a pull request :)
+
+[ahk]: https://github.com/andi-w00t/onekeyboard/blob/master/scripts/german/mac.ahk
+[reg]: https://github.com/andi-w00t/onekeyboard/blob/master/registry-ctrlswap/ctrlswap.reg
+
+
+
