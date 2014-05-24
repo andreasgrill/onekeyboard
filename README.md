@@ -38,6 +38,12 @@ At first we have to swap the CMD (`⌘`) key with the CTRL (`^`) key. This is so
 After you have successfully swapped the two keys, you just need to install autohotkey and start the [mac.ahk][ahk] script.
 If you don't use a German keyboard layout, you probably want to adjust the [mac.ahk][ahk] script to map special characters (such as `[](){}?@<>`) to the correct position. You are welcome to do so and create a pull request :)
 
+### Todo aka What's next?
+ * Splitting the ahk script in multiple scripts to
+ * support other layouts (English, Spanish, ...)
+ * Shortcuts for other applications
+
+
 [ahk]: https://github.com/andi-w00t/onekeyboard/blob/master/scripts/german/mac.ahk
 [reg]: https://github.com/andi-w00t/onekeyboard/blob/master/registry-ctrlswap/ctrlswap.reg
 [ktw]: https://github.com/andi-w00t/onekeyboard/blob/master/keytweak-ctrlswap/ctrlswap.ktw
