@@ -15,6 +15,7 @@ It simulates the following Mac OSX keyboard behavior under Windows:
  * Textfield navigation (`⌥ + Left`, `⌘ + Shift + Left`, ...)
  * Copy&Paste (`⌘ + C`, `⌘ + X`, `⌘ + V`)
  * Symbols (`@`, `[](){}/|`, ...)
+ * Some typical OSX shortcuts (`⌘ + Q`, `⌘ + ⌥ + ESC`)
  * Windows key is still accessible through CTRL (`^`)
 
 ## How to get it working
