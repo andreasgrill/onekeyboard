@@ -12,15 +12,16 @@ As I couldn't find very useful other layouts on the Internet and the support of 
 ## What exactly does it do?
 It simulates the following Mac OSX keyboard behavior under Windows:
 
- * Textfield navigation (`⌥ + Left`, `⌘ + Shift + Left`, ...)
+ * Text navigation (`⌥ + Left`, `⌘ + Shift + Left`, ...)
  * Copy&Paste (`⌘ + C`, `⌘ + X`, `⌘ + V`)
  * Symbols (`@`, `[](){}/|`, ...)
- * Some typical OSX shortcuts (`⌘ + Q`, `⌘ + ⌥ + ESC`)
+ * Some typical OSX shortcuts (`⌘ + Q`, `⌘ + ⌥ + ESC`, `⌘ + ⇧ + Z`, ...)
+ * Finder shortcuts for Explorer (`⌘ + DOWN`, `⌘ + Ö`, `⌘ + I`, ...)
  * Windows key is still accessible through CTRL (`^`)
 
 ## How to get it working
 ### Requirements
- * [autohotkey](http://www.autohotkey.com/) - lightweight program to interpret customized hotkeys.
+ * [autohotkey][autohotkey] - lightweight program to interpret customized hotkeys.
  * [mac.ahk][ahk] script to correctly map the hotkeys (e.g. the script that does all the work).
  * Some customization to swap the CMD (`⌘`) and the CTRL (`^`) keys lowlevel (see the following paragraph).
  * German keyboard layout (or you probably need to adjust the [mac.ahk][ahk] script for your language).
@@ -31,7 +32,7 @@ At first we have to swap the CMD (`⌘`) key with the CTRL (`^`) key. This is so
 
  * If you are using Windows through a VM such as Parallels Desktop, you could swap the keys by using the Parallels shortcut settings ([Example](images/parallels.png)).
  * You could swap the keys by mapping them through the registry by applying the [ctrlswap.reg][reg] file.
- * You could also use a free program to swap the keys (such as KeyTweak) but it produces the same registry entry anyway.
+ * You could also use a free program to swap the keys (such as [KeyTweak][keytweak]) but it produces the same registry entry anyway. You could use the [ctrlswap.ktw][ktw] configuration file for [KeyTweak][keytweak] to swap the keys.
 
 
 After you have successfully swapped the two keys, you just need to install autohotkey and start the [mac.ahk][ahk] script.
@@ -39,6 +40,6 @@ If you don't use a German keyboard layout, you probably want to adjust the [mac.
 
 [ahk]: https://github.com/andi-w00t/onekeyboard/blob/master/scripts/german/mac.ahk
 [reg]: https://github.com/andi-w00t/onekeyboard/blob/master/registry-ctrlswap/ctrlswap.reg
-
-
-
+[ktw]: https://github.com/andi-w00t/onekeyboard/blob/master/keytweak-ctrlswap/ctrlswap.ktw
+[autohotkey]: http://www.autohotkey.com
+[keytweak]: http://www.tucows.com/preview/327616/KeyTweak
